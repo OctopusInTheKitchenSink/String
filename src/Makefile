@@ -16,8 +16,11 @@ all: clean s21_string.a test gcov_report
 s21_string.o: s21_string.c s21_string.h
 	$(CC) $(CFLAGS) -c s21_string.c -o s21_string.o
 
-s21_string.a: s21_string.o
-	ar rc s21_string.a s21_string.o
+s21_sprintf.o: s21_sprintf.c s21_string.h
+	$(CC) $(CFLAGS) -c s21_sprintf.c -o s21_sprintf.o
+
+s21_string.a: s21_string.o s21_sprintf.o
+	ar rc s21_string.a s21_string.o s21_sprintf.o
 
 test:
 	@mkdir -p Tests 
