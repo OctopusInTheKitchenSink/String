@@ -82,7 +82,7 @@ git clone https://github.com/OctopusInTheKitchenSink/String.git
 cd String/src
 make s21_string.a
 
-# для подключения билиотеки к своему файлу, подключите заголовочный файл s21_string.h,
+# для подключения библиотеки к своему файлу, подключите заголовочный файл s21_string.h,
 # указав корректные пути
 # при компиляции подключайте статическую библиотеку. Пример:
 gcc -Wall -Werror -Wextra -std=c11 Your_file.c s21_string.a
