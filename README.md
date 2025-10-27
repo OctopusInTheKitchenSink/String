@@ -15,7 +15,7 @@
 №|Функция|Описание
 -|-|-
 1|```void *memchr(const void *str, int c, size_t n);```|Выполняет поиск первого вхождения символа c (беззнаковый тип) в первых ```n``` байтах строки, на которую указывает аргумент ```str```.
-2|```int memcmp(const void *str1, const void *str2, size_t n);```|Сравнивает первые ```n``` байтов ```str1``` и ```str2```.
+2|```int memcmp(const void *str1, const void *str2, size_t n);```|Сравнивает первые ```n``` байт ```str1``` и ```str2```.
 3|```void *memcpy(void *dest, const void *src, size_t n);```|Копирует ```n``` символов из ```src``` в ```dest```.
 4|```void *memset(void *str, int c, size_t n);```|Копирует символ c (беззнаковый тип) в первые ```n``` символов строки, на которую указывает аргумент ```str```.
 5|```char *strncat(char *dest, const char *src, size_t n);```|Добавляет строку, на которую указывает ```src```, в конец строки, на которую указывает ```dest```, длиной до ```n``` символов.
